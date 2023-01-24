@@ -1,0 +1,25 @@
+$primary: #FA2759;
+$secondary: #2DFCD8;
+$grey: #1A1A1A;
+
+h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 90px;
+    margin: 16px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 200px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: white;
+}

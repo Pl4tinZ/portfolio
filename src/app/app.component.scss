@@ -1,0 +1,25 @@
+$primary: #FA2759;
+$secondary: #2DFCD8;
+$grey: #1A1A1A;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.main-content {
+    width: 100vw;
+    max-width: 1440px;
+    padding: 0 120px;
+    position: relative;
+}
+
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $grey;
+}
