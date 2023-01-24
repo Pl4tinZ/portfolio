@@ -1,0 +1,33 @@
+$primary: #FA2759;
+$secondary: #2DFCD8;
+$grey: #1A1A1A;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    background-color: black;
+    max-width: 1440px;
+
+    .links {
+        display: flex;
+        gap: 60px;
+
+        a {
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    img {
+        width: 86px;
+        height: 86px;
+    }
+}

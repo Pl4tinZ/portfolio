@@ -1,0 +1,25 @@
+<div class="start-screen">
+    <div class="start-screen-content">
+        <div class="left-content-start-screen">
+            <div *ngIf="welcome" class="welcome-text static-welcome-text">
+                <p id="text1"></p>
+                <p id="text2"></p>
+                <p id="text3"></p>
+            </div>
+            <div *ngIf="!welcome" class="static-welcome-text">
+                <p>Hi,</p>
+                <p>I'm <span class="primary">Dennis</span> Frese</p>
+                <p>Front End develop<span class="secondary">e</span>r</p>
+            </div>
+            <div class="sec-btn">
+                <span>Contact me</span>
+            </div>
+        </div>
+        <div class="right-content-start-screen">
+            <img src="assets/img/profile-picture.png">
+        </div>
+    </div>
+    <div class="scroll-down-container">
+        <img src="assets/img/icons/scroll-down-icon.svg">
+    </div>
+</div>
