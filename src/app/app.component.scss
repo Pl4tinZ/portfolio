@@ -13,7 +13,6 @@ $grey: #1A1A1A;
 .main-content {
     width: 100vw;
     max-width: 1440px;
-    padding: 0 120px;
     position: relative;
 }
 
@@ -21,5 +20,23 @@ $grey: #1A1A1A;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $grey;
+    background-color: #131111;
+    padding-bottom: 117px;
+}
+
+.my-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 120px 117px 120px;
+}
+
+.about-me {
+    background-color: #131111;
+    padding-bottom: 200px;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
 }

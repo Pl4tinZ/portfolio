@@ -89,6 +89,9 @@ checkTextPosition() {
     clearInterval(this.interval); // stable speed
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: 'smooth'});
+}
 
 
 }

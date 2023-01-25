@@ -1,0 +1,30 @@
+$primary: #FA2759;
+$secondary: #2DFCD8;
+$grey: #1A1A1A;
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 80px;
+}
+
+.legal {
+    span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #8491A0;
+    }
+}
+
+.social-media {
+    display: flex;
+    gap: 90px;
+
+    img {
+        height: 35px;
+    }
+}

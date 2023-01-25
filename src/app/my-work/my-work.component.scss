@@ -1,0 +1,47 @@
+$primary: #FA2759;
+$secondary: #2DFCD8;
+$grey: #1A1A1A;
+
+h2 {
+    color: white;
+    margin-top: 96px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.filter-container {
+    display: flex;
+    gap: 6px;
+}
+
+.pri-btn {
+    width: 130px;
+    height: 70px;
+    border: solid 2px $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 48px 0;
+    cursor: pointer;
+    
+
+    &:hover {
+        transition: all 225ms ease-in-out;
+        background-color: $primary;
+    }
+}
+
+.work-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.project {
+    width: 440px;
+    height: 370px;
+}

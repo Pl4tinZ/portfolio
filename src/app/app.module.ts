@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { StartScreenComponent } from './start-screen/start-screen.component';
 import { HeaderComponent } from './header/header.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
+import { MyWorkComponent } from './my-work/my-work.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartScreenComponent,
     HeaderComponent,
-    MySkillsComponent
+    MySkillsComponent,
+    MyWorkComponent,
+    AboutMeComponent,
+    ContactMeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

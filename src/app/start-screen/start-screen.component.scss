@@ -7,6 +7,7 @@ $grey: #1A1A1A;
     color: white;
     margin-top: 144px;
     margin-bottom: 100px;
+    padding: 0 120px;
 }
 
 .start-screen-content {
@@ -79,16 +80,15 @@ $grey: #1A1A1A;
 
     &:hover {
         transition: all 225ms ease-in-out;
-        border: solid 2px $primary;
+        background-color: $secondary;
 
         span {
             transition: all 225ms ease-in-out;
-            color: $primary;
+            color: black;
         }
     }
 
     span {
-        font-family: 'Gilroy-Bold';
         color: $secondary;
         font-size: 18px;
     }
