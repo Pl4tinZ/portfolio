@@ -2,12 +2,23 @@ $primary: #FA2759;
 $secondary: #2DFCD8;
 $grey: #1A1A1A;
 
+#myskills {
+        scroll-margin-top: 100px;
+}
+
 h2 {
     color: white;
     font-weight: 500;
     font-size: 36px;
     line-height: 90px;
     margin: 16px;
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-container {
