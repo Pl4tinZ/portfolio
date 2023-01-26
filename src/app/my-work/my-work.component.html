@@ -2,21 +2,24 @@
     <h2>My work</h2>
 </div>
 <div class="filter-container">
-    <div class="pri-btn">All</div>
-    <div class="pri-btn">Angular</div>
-    <div class="pri-btn">JavaScript</div>
+    <div (click)="filterAll()" [ngClass]="{'active-filter' : allButton}" class="pri-btn active-filter">
+        <span>All</span>
+    </div>
+    <div (click)="filterAngular()" [ngClass]="{'active-filter' : angularButton}" class="pri-btn">
+        <span>Angular</span>
+    </div>
+    <div (click)="filterJavaScript()"  [ngClass]="{'active-filter' : jsButton}" class="pri-btn">
+        <span>JavaScript</span>
+    </div>
 </div>
 <div class="work-container">
-    <div class="project">
-        <img src="../../assets/img/project1.png">
-    </div>
-    <div class="project">
-        <img src="../../assets/img/project2.png">
-    </div>
-    <div class="project">
-        <img src="../../assets/img/project3.png">
-    </div>
-    <div class="project">
-        <img src="../../assets/img/project4.png">
+    <div data-aos="fade-up-left" *ngFor="let project of tool; let i = index" class="project">
+        <img src="{{ project.image }}">
+        <div class="try-out-container">
+            <h2>{{ project.name }}</h2>
+            <div>{{ project.text }}</div>
+            <a href="{{ project.url }}" target="_blank" class="try-out-button">Try out</a>
+            <a href="{{ project.urlGithub }}" target="_blank" class="try-out-button">Github</a>
+        </div>
     </div>
 </div>

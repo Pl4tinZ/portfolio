@@ -1,7 +1,18 @@
 <div class="skill-content" id="myskills">
     <h2>My Skills</h2>
     <div class="skill-container">
-        <div class="skill">
+
+
+        <div data-aos="flip-down" class="skill" *ngFor="let mySkill of mySkills">
+            <div>
+                <img src="assets/img/icons/{{ mySkill.skillImg }}.svg">
+            </div>
+            <span>{{ mySkill.skillName }}</span>
+        </div>
+
+
+
+        <!-- <div class="skill">
             <div>
                 <img src="../../assets/img/icons/HTML5.svg">
             </div>
@@ -54,6 +65,6 @@
                 <img src="../../assets/img/icons/Databases.svg">
             </div>
             <span>Databases</span>
-        </div>
+        </div> -->
     </div>
 </div>

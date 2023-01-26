@@ -54,6 +54,12 @@ $grey: #1A1A1A;
         font-weight: 500;
         font-size: 18px;
         line-height: 44px;
+
+        &:focus {
+            outline-color: $secondary;
+            outline-style: solid;
+            outline-width: 1px;
+        }
     }
 
     textarea {
@@ -65,6 +71,12 @@ $grey: #1A1A1A;
         font-weight: 500;
         font-size: 18px;
         line-height: 44px;
+
+        &:focus {
+            outline-color: $secondary;
+            outline-style: solid;
+            outline-width: 1px;
+        }
     }
 }
 
@@ -82,6 +94,15 @@ $grey: #1A1A1A;
     align-items: center;
     margin: 24px 0;
     cursor: pointer;
+
+    button {
+        border: none;
+        background-color: unset;
+        color: white;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
     
 
     &:hover {
@@ -89,7 +110,7 @@ $grey: #1A1A1A;
         background-color: $secondary;
         
 
-        span {
+        button {
             transition: all 225ms ease-in-out;
             color: black;
         }
