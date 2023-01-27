@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+uncheck() {
+  let button = document.querySelector('.menu-button') as HTMLInputElement;
+  button.checked = false;
 }
+
+}
+
+

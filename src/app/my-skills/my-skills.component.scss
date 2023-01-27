@@ -28,6 +28,11 @@ h2 {
     flex-wrap: wrap;
     gap: 35px;
     width: 700px;
+
+    @media (max-width: 900px) {
+        width: unset;
+    }
+
 }
 
 .skill {
@@ -54,9 +59,35 @@ h2 {
         justify-content: center;
         align-items: center;
         box-shadow: 0px 4px 4px rgba(197, 197, 197, 0.25);
+
+        @media (max-width: 520px) {
+            width: 45px;
+            height: 45px;
+            top: -22.5px;
+        }
     }
 
     img {
         width: 30px;
+
+        @media (max-width: 520px) {
+            width: 20px;
+        }
+    }
+
+    span {
+        @media (max-width: 520px) {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        width: 176px;
+        height: 110px;
+    }
+
+    @media (max-width: 520px) {
+        width: 126px;
+        height: 80px;
     }
 }

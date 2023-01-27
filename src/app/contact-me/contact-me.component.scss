@@ -10,21 +10,45 @@ $grey: #1A1A1A;
     padding: 100px 0;
     width: 620px;
 
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+
     h2 {
         color: $secondary;
         font-weight: 700;
         font-size: 64px;
         line-height: 90px;
         margin: 8px 0;
+
+        @media (max-width: 650px) {
+            font-weight: 600;
+            font-size: 42px;
+        }
+
+        @media (max-width: 400px) {
+            font-weight: 500;
+            font-size: 36px;
+        }
     }
 
     p {
         color: #F2F2F2;
         font-weight: 500;
         font-size: 18px;
-        line-height: 44px;
+        line-height: 24px;
         opacity: 0.66;
         margin: 0;
+
+        @media (max-width: 800px) {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            font-weight: 300;
+            font-size: 12px;
+        }
         
         span {
             color: $secondary;
@@ -43,6 +67,10 @@ $grey: #1A1A1A;
         font-size: 18px;
         line-height: 20px;
         margin: 20px 0 16px 0;
+
+        @media (max-width: 400px) {
+            margin: 20px 0 8px 0;
+        }
     }
 
     input {
@@ -53,12 +81,17 @@ $grey: #1A1A1A;
         padding: 8px 16px;
         font-weight: 500;
         font-size: 18px;
-        line-height: 44px;
 
         &:focus {
             outline-color: $secondary;
             outline-style: solid;
             outline-width: 1px;
+        }
+
+        @media (max-width: 500px) {
+            padding: 8px 16px;
+            font-weight: 400;
+            font-size: 16px;
         }
     }
 
@@ -70,12 +103,17 @@ $grey: #1A1A1A;
         padding: 8px 16px;
         font-weight: 500;
         font-size: 18px;
-        line-height: 44px;
 
         &:focus {
             outline-color: $secondary;
             outline-style: solid;
             outline-width: 1px;
+        }
+
+        @media (max-width: 500px) {
+            padding: 8px 16px;
+            font-weight: 400;
+            font-size: 16px;
         }
     }
 }
@@ -94,6 +132,11 @@ $grey: #1A1A1A;
     align-items: center;
     margin: 24px 0;
     cursor: pointer;
+
+    @media (max-width: 400px) {
+        width: 130px;
+        height: 40px;
+    }
 
     button {
         border: none;

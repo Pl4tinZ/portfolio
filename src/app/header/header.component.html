@@ -7,4 +7,25 @@
         <a href="#about-me" class="about">ABOUT</a>
         <a href="#portfolio" class="portfolio">PORFOLIO</a>
     </div>
+
+
+    <label class="menu-button-wrapper d-none" for="">
+        <input type="checkbox" class="menu-button">
+        <div class="icon-wrapper">
+            <label class="hamburger">
+                <input class="hamburger-input" type="checkbox">
+                <span class="hamburger-line first"></span>
+                <span class="hamburger-line second"></span>
+                <span class="hamburger-line third"></span>
+            </label>
+        </div>
+        <div class="item-list">
+        <a (click)="uncheck()" href="#" class="home">HOME</a>
+        <a (click)="uncheck()" href="#about-me" class="about">ABOUT</a>
+        <a (click)="uncheck()" href="#portfolio" class="portfolio">PORFOLIO</a>
+        </div>
+    </label>
+
+
+
 </header>

@@ -12,11 +12,20 @@ $grey: #1A1A1A;
     justify-content: center;
     padding: 0 120px;
     background-color: black;
+
+    @media (max-width: 600px) {
+        padding: 0 60px;
+    }
+
+    @media (max-width: 350px) {
+        padding: 0 30px;
+    }
 }
 
 
 .main-content {
     position: relative;
+    width: 100vw;
 }
 
 .my-skills {
@@ -24,8 +33,16 @@ $grey: #1A1A1A;
     flex-direction: column;
     align-items: center;
     background-color: #131111;
-    padding-bottom: 117px;
     width: 100%;
+    padding: 0 120px 117px 120px;
+
+    @media (max-width: 630px) {
+        padding: 0 60px 60px 60px;
+    }
+
+    @media (max-width: 350px) {
+        padding: 0 30px 60px 30px;
+    }
 }
 
 .my-work {
@@ -33,6 +50,14 @@ $grey: #1A1A1A;
     flex-direction: column;
     align-items: center;
     padding: 0 120px 117px 120px;
+
+    @media (max-width: 600px) {
+        padding: 0 60px 117px 60px;
+    }
+
+    @media (max-width: 350px) {
+        padding: 0 30px 117px 30px;
+    }
 }
 
 .about-me {
@@ -43,4 +68,14 @@ $grey: #1A1A1A;
 .contact-me {
     display: flex;
     justify-content: center;
+    padding: 0 120px;
+
+    @media (max-width: 630px) {
+        padding: 0 60px;
+    }
+
+    
+    @media (max-width: 350px) {
+        padding: 0 30px;
+    }
 }

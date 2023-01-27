@@ -41,7 +41,7 @@ export class MySkillsComponent {
       "skillImg": "API"
     },
     {
-      "skillName":"Test autmation",
+      "skillName":"Test automation",
       "skillImg": "Test-Animation"
     },
     {

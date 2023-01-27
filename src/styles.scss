@@ -4,12 +4,13 @@ $grey: #1A1A1A;
 
 * {
     box-sizing: border-box;
+    // border: solid 1px red;
 }
 
 html {
      scroll-behavior: smooth;
+     overflow-x: hidden;
 }
-
 
 body {
     margin: 0;
@@ -20,23 +21,18 @@ body {
 }
 
 body::-webkit-scrollbar {
-     width: 8px;               /* width of the entire scrollbar */
+     width: 8px;
    }
    
    body::-webkit-scrollbar-track {
-     background: unset;        /* color of the tracking area */
+     background: unset;
    }
    
    body::-webkit-scrollbar-thumb {
-     background-color: $secondary;    /* color of the scroll thumb */
-     border-radius: 20px;       /* roundness of the scroll thumb */
-     border: 1px solid $primary;  /* creates padding around scroll thumb */
+     background-color: $secondary;
+     border-radius: 20px;
+     border: 1px solid $primary;
    }
- 
-//    body {
-//      scrollbar-width: thin;          /* "auto" or "thin" */
-//      scrollbar-color: blue orange;   /* scroll thumb and track */ 
-//    }
 
 /* inter-100 - latin */
 @font-face {
