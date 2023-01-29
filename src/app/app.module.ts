@@ -11,6 +11,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChooseLanguageComponent } from './choose-language/choose-language.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutMeComponent,
     ContactMeComponent,
     FooterComponent,
+    ChooseLanguageComponent,
   ],
   imports: [
     BrowserModule,

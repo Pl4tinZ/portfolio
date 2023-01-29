@@ -1,0 +1,26 @@
+.choose-language-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    width: 100vw;
+    height: 100vh;
+
+    h1 {
+        color: white;
+    }
+}
+
+.language-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+
+    img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+}
