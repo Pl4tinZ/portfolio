@@ -1,26 +1,32 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-choose-language',
   templateUrl: './choose-language.component.html',
   styleUrls: ['./choose-language.component.scss']
 })
 export class ChooseLanguageComponent {
-  public german = false;
-  public english = false;
+  german = false;
+  english = false;
 
   languageEnglish() {
     this.english = true
-    document.querySelector('.main-content').classList.remove('d-none');
+    console.log(this.english);
+    // document.querySelector('.choose-language-container').classList.add('d-none');
   }
 
   languageGerman() {
     this.german = true;
-    document.querySelector('.main-content').classList.remove('d-none');
+    console.log(this.german);
+    // document.querySelector('.choose-language-container').classList.add('d-none');
   }
 
 
 }
+
+
+
 
 
 

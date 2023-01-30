@@ -24,15 +24,19 @@ body::-webkit-scrollbar {
      width: 8px;
    }
    
-   body::-webkit-scrollbar-track {
-     background: unset;
-   }
+body::-webkit-scrollbar-track {
+  background: unset;
+}
    
-   body::-webkit-scrollbar-thumb {
-     background-color: $secondary;
-     border-radius: 20px;
-     border: 1px solid $primary;
-   }
+body::-webkit-scrollbar-thumb {
+  background-color: $secondary;
+  border-radius: 20px;
+  border: 1px solid $primary;
+}
+
+.d-none {
+  display: none;
+}
 
 /* inter-100 - latin */
 @font-face {
