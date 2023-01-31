@@ -12,6 +12,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChooseLanguageComponent } from './choose-language/choose-language.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ChooseLanguageComponent } from './choose-language/choose-language.compo
     ContactMeComponent,
     FooterComponent,
     ChooseLanguageComponent,
+    ImprintComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     BrowserModule,

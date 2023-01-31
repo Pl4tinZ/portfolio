@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 
 @Component({
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./choose-language.component.scss']
 })
 export class ChooseLanguageComponent {
+
+  constructor(public languageservice: LanguageService) {}
+
+  de = this.languageservice.german;
+  en = this.languageservice.english;
+
   german = false;
   english = false;
 

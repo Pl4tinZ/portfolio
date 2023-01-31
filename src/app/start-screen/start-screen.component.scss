@@ -181,6 +181,10 @@ a {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
 
     &:hover {
         transition: all 225ms ease-in-out;
@@ -213,6 +217,10 @@ a {
     }
 }
 
+a {
+    position: relative;
+}
+
 .scroll-down-container {
     width: 100%;
     display: flex;
@@ -224,6 +232,9 @@ a {
     }
 
     img {
+        background-origin: 0;
+        z-index: 1;
+
         &:hover {
             transition: all 225ms ease-in-out;
             transform: scale(1.1);
@@ -256,6 +267,7 @@ section {
 #stars {
     width: 1px;
     height: 1px;
+    border-radius: 100%;
     background: transparent;
     animation: animStar 200s linear infinite;
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
@@ -440,6 +452,7 @@ section {
 #stars:after {
     content: '';
     position: absolute;
+    border-radius: 100%;
     top: 2000px;
     width: 1px;
     height: 1px;
@@ -626,6 +639,7 @@ section {
 #stars2 {
     width: 2px;
     height: 2px;
+    border-radius: 100%;
     background: transparent;
     animation: animStar 300s linear infinite;
     box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
@@ -687,6 +701,7 @@ section {
     top: 2000px;
     width: 2px;
     height: 2px;
+    border-radius: 100%;
     background: transparent;
     box-shadow: 1448px 320px #fff, 1775px 1663px #fff, 332px 1364px #fff,
     878px 340px #fff, 569px 1832px #fff, 1422px 1684px #fff, 1946px 1907px #fff,
@@ -744,6 +759,7 @@ section {
 #stars3 {
     width: 3px;
     height: 3px;
+    border-radius: 100%;
     background: transparent;
     animation: animStar 150s linear infinte;
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
@@ -780,6 +796,7 @@ section {
     top: 2000px;
     width: 3px;
     height: 3px;
+    border-radius: 100%;
     background: transparent;
     box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
     948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
