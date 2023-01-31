@@ -1,6 +1,6 @@
-<!-- <app-choose-language class="choose-language"></app-choose-language> -->
+<app-choose-language *ngIf="language == ''" class="choose-language"></app-choose-language>
 
-<div class="main-content">
+<div class="main-content" *ngIf="router.url === '/'">
     <app-header class="header"></app-header>
     <app-start-screen class="start"></app-start-screen>
     <app-my-skills class="my-skills"></app-my-skills>
@@ -13,3 +13,4 @@
 <router-outlet></router-outlet>
 
 
+<!-- *ngIf="language !== 'english'" -->

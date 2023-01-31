@@ -6,19 +6,15 @@ import { Injectable } from '@angular/core';
 export class LanguageService {
 
   constructor() { }
-
-  german = false;
-  english = false
+  chosenLanguage = '';
 
   languageEnglish() {
-    this.english = true
-    console.log(this.english);
-    // document.querySelector('.choose-language-container').classList.add('d-none');
+    this.chosenLanguage = 'english';
+    console.log(this.chosenLanguage);
   }
 
   languageGerman() {
-    this.german = true;
-    console.log(this.german);
-    // document.querySelector('.choose-language-container').classList.add('d-none');
+    this.chosenLanguage = 'german';
+    console.log(this.chosenLanguage);
   }
 }

@@ -18,7 +18,7 @@ export class MyWorkComponent {
     },
     {
       "workTool": "js",
-      "image": "assets/img/project1.png",
+      "image": "assets/img/project2.png",
       "name": "Join",
       "text": "JavaScript - Kanbanboard",
       "url": "https://join.frese.one",
@@ -26,7 +26,7 @@ export class MyWorkComponent {
     },
     {
       "workTool": "angular",
-      "image": "assets/img/project1.png",
+      "image": "assets/img/project3.png",
       "name": "Portfolio",
       "text": "Dies ist ein Angular-Projekt",
       "url": "https://portfolio.frese.one",
@@ -34,7 +34,7 @@ export class MyWorkComponent {
     },
     {
       "workTool": "angular",
-      "image": "assets/img/project1.png",
+      "image": "assets/img/project4.png",
       "name": "Ring of fire",
       "text": "Dies ist ein Angular-Projekt",
       "url": "https://ring-of-fire.frese.one",
@@ -54,7 +54,7 @@ export class MyWorkComponent {
     },
     {
       "workTool": "js",
-      "image": "assets/img/project1.png",
+      "image": "assets/img/project2.png",
       "name": "Join",
       "text": "JavaScript - Kanbanboard",
       "url": "https://join.frese.one",
@@ -62,7 +62,7 @@ export class MyWorkComponent {
     },
     {
       "workTool": "angular",
-      "image": "assets/img/project1.png",
+      "image": "assets/img/project3.png",
       "name": "Portfolio",
       "text": "Dies ist ein Angular-Projekt",
       "url": "https://portfolio.frese.one",
@@ -70,7 +70,7 @@ export class MyWorkComponent {
     },
     {
       "workTool": "angular",
-      "image": "assets/img/project1.png",
+      "image": "assets/img/project4.png",
       "name": "Ring of fire",
       "text": "Dies ist ein Angular-Projekt",
       "url": "https://ring-of-fire.frese.one",
