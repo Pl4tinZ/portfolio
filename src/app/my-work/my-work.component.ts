@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-my-work',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-work.component.scss']
 })
 export class MyWorkComponent {
+
+  constructor(public languageservice: LanguageService) {}
 
   projects: any = [
     {

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { interval } from 'rxjs';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-start-screen',
@@ -18,6 +19,8 @@ export class StartScreenComponent {
   textTemplate1 = "Hi,";
   textTemplate2 = "I'm Dennis Frese";
   textTemplate3 = "Front End developer";
+
+  constructor(public languageservice: LanguageService) {}
 
   ngOnInit() {
     this.showWelcomeText1();
@@ -38,7 +41,17 @@ export class StartScreenComponent {
     }, 70);
   }
 
+  setTextLanguage() {
+    if (this.languageservice.chosenLanguage == 'german') {
+      this.textTemplate2 = "Ich bin Dennis Frese"
+    }
+    if (this.languageservice.chosenLanguage == 'german') {
+      this.textTemplate3 = "Front End Entwickler"
+    }
+  }
+
   generateText() {
+    this.setTextLanguage();
     if (this.text1.length !== this.textTemplate1.length) {
       this.text1 = this.text;
     } else if (this.text2.length !== this.textTemplate2.length) {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  
+  constructor(public languageservice: LanguageService) {}
+
 
 uncheck() {
   let button = document.querySelector('.menu-button') as HTMLInputElement;

@@ -1,25 +1,55 @@
-<div class="headline" id="portfolio">
-    <h2>My work</h2>
+<div class="my-work-content" *ngIf="languageservice.chosenLanguage == 'english'">
+    <div class="headline" id="portfolio">
+        <h2>My work</h2>
+    </div>
+    <div class="filter-container">
+        <div (click)="filterAll()" [ngClass]="{'active-filter' : allButton}" class="pri-btn active-filter">
+            <span>All</span>
+        </div>
+        <div (click)="filterAngular()" [ngClass]="{'active-filter' : angularButton}" class="pri-btn">
+            <span>Angular</span>
+        </div>
+        <div (click)="filterJavaScript()" [ngClass]="{'active-filter' : jsButton}" class="pri-btn">
+            <span>JavaScript</span>
+        </div>
+    </div>
+    <div class="work-container">
+        <div data-aos="fade-up-left" *ngFor="let project of tool; let i = index" class="project">
+            <img src="{{ project.image }}">
+            <div class="try-out-container">
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.text }}</p>
+                <a href="{{ project.url }}" target="_blank" class="try-out-button">Try out</a>
+                <a href="{{ project.urlGithub }}" target="_blank" class="try-out-button">Github</a>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="filter-container">
-    <div (click)="filterAll()" [ngClass]="{'active-filter' : allButton}" class="pri-btn active-filter">
-        <span>All</span>
+
+<div class="my-work-content" *ngIf="languageservice.chosenLanguage == 'german'">
+    <div class="headline" id="portfolio">
+        <h2>Meine Projekte</h2>
     </div>
-    <div (click)="filterAngular()" [ngClass]="{'active-filter' : angularButton}" class="pri-btn">
-        <span>Angular</span>
+    <div class="filter-container">
+        <div (click)="filterAll()" [ngClass]="{'active-filter' : allButton}" class="pri-btn active-filter">
+            <span>Alle</span>
+        </div>
+        <div (click)="filterAngular()" [ngClass]="{'active-filter' : angularButton}" class="pri-btn">
+            <span>Angular</span>
+        </div>
+        <div (click)="filterJavaScript()" [ngClass]="{'active-filter' : jsButton}" class="pri-btn">
+            <span>JavaScript</span>
+        </div>
     </div>
-    <div (click)="filterJavaScript()"  [ngClass]="{'active-filter' : jsButton}" class="pri-btn">
-        <span>JavaScript</span>
-    </div>
-</div>
-<div class="work-container">
-    <div data-aos="fade-up-left" *ngFor="let project of tool; let i = index" class="project">
-        <img src="{{ project.image }}">
-        <div class="try-out-container">
-            <h2>{{ project.name }}</h2>
-            <p>{{ project.text }}</p>
-            <a href="{{ project.url }}" target="_blank" class="try-out-button">Try out</a>
-            <a href="{{ project.urlGithub }}" target="_blank" class="try-out-button">Github</a>
+    <div class="work-container">
+        <div data-aos="fade-up-left" *ngFor="let project of tool; let i = index" class="project">
+            <img src="{{ project.image }}">
+            <div class="try-out-container">
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.text }}</p>
+                <a href="{{ project.url }}" target="_blank" class="try-out-button">Teste es</a>
+                <a href="{{ project.urlGithub }}" target="_blank" class="try-out-button">Github</a>
+            </div>
         </div>
     </div>
 </div>

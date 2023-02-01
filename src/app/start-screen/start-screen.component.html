@@ -1,4 +1,4 @@
-<div class="start-screen">
+<div class="start-screen" *ngIf="languageservice.chosenLanguage == 'english'">
     <div class="start-screen-content">
         <div class="left-content-start-screen">
             <div *ngIf="welcome" class="welcome-text static-welcome-text">
@@ -14,6 +14,41 @@
             <a href="#contact">
                 <div class="sec-btn">
                     <span>Contact me</span>
+                </div>
+            </a>
+        </div>
+        <div class="right-content-start-screen">
+            <img src="assets/img/profile-picture.png">
+        </div>
+    </div>
+    <a href="#myskills">
+        <div class="scroll-down-container">
+            <img src="assets/img/icons/scroll-down-icon.svg">
+        </div>
+    </a>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+</div>
+
+<div class="start-screen" *ngIf="languageservice.chosenLanguage == 'german'">
+    <div class="start-screen-content">
+        <div class="left-content-start-screen">
+            <div *ngIf="welcome" class="welcome-text static-welcome-text">
+                <p id="text1">{{ text1 }}</p>
+                <p id="text2">{{ text2 }}</p>
+                <p id="text3">{{ text3 }}</p>
+            </div>
+            <div *ngIf="!welcome" class="static-welcome-text">
+                <p>Hi,</p>
+                <p>Ich bin <span class="primary show">Dennis</span> Frese</p>
+                <p>Front End Entwickl<span class="secondary show">e</span>r</p>
+            </div>
+            <a href="#contact">
+                <div class="sec-btn">
+                    <span>Kontakt</span>
                 </div>
             </a>
         </div>

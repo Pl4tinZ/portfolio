@@ -1,4 +1,4 @@
-<header>
+<header *ngIf="languageservice.chosenLanguage == 'english'">
     <div class="header-logo">
         <img src="assets/img/header-logo.png">
     </div>
@@ -25,7 +25,33 @@
         <a (click)="uncheck()" href="#portfolio" class="portfolio">PORFOLIO</a>
         </div>
     </label>
+</header>
+
+<header *ngIf="languageservice.chosenLanguage == 'german'">
+    <div class="header-logo">
+        <img src="assets/img/header-logo.png">
+    </div>
+    <div class="links">
+        <a href="#" class="home">Startseite</a>
+        <a href="#about-me" class="about">Über mich</a>
+        <a href="#portfolio" class="portfolio">Portfolio</a>
+    </div>
 
 
-
+    <label class="menu-button-wrapper d-none" for="">
+        <input type="checkbox" class="menu-button">
+        <div class="icon-wrapper">
+            <label class="hamburger">
+                <input class="hamburger-input" type="checkbox">
+                <span class="hamburger-line first"></span>
+                <span class="hamburger-line second"></span>
+                <span class="hamburger-line third"></span>
+            </label>
+        </div>
+        <div class="item-list">
+        <a (click)="uncheck()" href="#" class="home">Startseite</a>
+        <a (click)="uncheck()" href="#about-me" class="about">Über mich</a>
+        <a (click)="uncheck()" href="#portfolio" class="portfolio">Portfolio</a>
+        </div>
+    </label>
 </header>

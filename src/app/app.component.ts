@@ -14,9 +14,4 @@ export class AppComponent {
 
   constructor(public router: Router, public languageservice: LanguageService) {}
 
-  language = this.languageservice.chosenLanguage;
-
-  ngOnInit() {
-    console.log(this.language);
-  }
 }

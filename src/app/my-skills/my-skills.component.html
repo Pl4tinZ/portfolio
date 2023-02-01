@@ -1,5 +1,17 @@
-<div class="skill-content" id="myskills">
+<div class="skill-content" id="myskills" *ngIf="languageservice.chosenLanguage == 'english'">
     <h2>My Skills</h2>
+    <div class="skill-container">
+        <div data-aos="flip-down" class="skill" *ngFor="let mySkill of mySkills">
+            <div>
+                <img src="assets/img/icons/{{ mySkill.skillImg }}.svg">
+            </div>
+            <span>{{ mySkill.skillName }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="skill-content" id="myskills" *ngIf="languageservice.chosenLanguage == 'german'">
+    <h2>Meine Fähigkeiten</h2>
     <div class="skill-container">
         <div data-aos="flip-down" class="skill" *ngFor="let mySkill of mySkills">
             <div>

@@ -2,6 +2,12 @@ $primary: #FA2759;
 $secondary: #2DFCD8;
 $grey: #1A1A1A;
 
+.my-work-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h2 {
     color: white;
     margin-top: 96px;
