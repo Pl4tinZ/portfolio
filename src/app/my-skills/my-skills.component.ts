@@ -17,15 +17,23 @@ export class MySkillsComponent {
   public mySkills = [
     {
       "skillName":"JavaScript",
-      "skillImg": "HTML5"
+      "skillImg": "Javascript"
+    },
+    {
+      "skillName":"TypeScript",
+      "skillImg": "TypeScript"
     },
     {
       "skillName":"Angular",
       "skillImg": "Angular"
     },
     {
-      "skillName":"HTML / CSS",
+      "skillName":"(S)CSS",
       "skillImg": "CSS3"
+    },
+    {
+      "skillName":"Firebase",
+      "skillImg": "Firebase"
     },
     {
       "skillName":"SCRUM",
@@ -34,10 +42,6 @@ export class MySkillsComponent {
     {
       "skillName":"Git",
       "skillImg": "Git"
-    },
-    {
-      "skillName":"Design Thinking",
-      "skillImg": "Pencil"
     },
     {
       "skillName":"Rest API",

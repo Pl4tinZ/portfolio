@@ -1,11 +1,11 @@
-<div class="about-me-content" id="about-me">
+<div class="about-me-content" id="about-me" *ngIf="languageservice.chosenLanguage == 'english'">
     <div class="personal-information">
         <div class="about-me-profile-picture">
             <img src="assets/img/profile-picture.png">
         </div>
         <div class="about-me-information-text">
             <h2>About me.</h2>
-            <span>" I'm an outdoor sports enthusiast and front end devloper who loves pushing boundaries</span>
+            <span>I am a 28 year old enthusiastic front-end developer, full of zest for life and striving for constant growth</span>
         </div>
     </div>
     <div class="line">
@@ -18,7 +18,7 @@
             </div>
             <div class="detail-information-text">
                 <h3>MY JOURNEY BEGAN</h3>
-                <span>mit dem Antrieb mich weiter zu entwickeln, nie stehen zu bleiben und zu erschaffen. In die Reise ins unbekannte</span>
+                <span>with the impulse to evolve, to never stand still and to create. In the journey into the unknown.</span>
             </div>
         </div>
         <div class="detail-information" data-aos="zoom-in">
@@ -27,7 +27,7 @@
             </div>
             <div class="detail-information-text">
                 <h3>MY PASSION</h3>
-                <span>mit Feuer in der Brust und leidenschaft im Geist stück für stück die Welt zu verändern</span>
+                <span>with fire in the chest and passion in the mind to change the world piece by piece.</span>
             </div>
         </div>
         <div class="detail-information" data-aos="zoom-in">
@@ -36,7 +36,7 @@
             </div>
             <div class="detail-information-text">
                 <h3>MY SEARCH</h3>
-                <span>Ich bin stets auf der Suche nach Abenteuer, Spaß, Weiterentwickelung und neuen Erfahrungen</span>
+                <span>I am always looking for adventure, fun, development and new experiences.</span>
             </div>
         </div>
         <div class="detail-information" data-aos="zoom-in">
@@ -45,7 +45,60 @@
             </div>
             <div class="detail-information-text">
                 <h3>MY AIM</h3>
-                <span>Durch Leistung, Durchhaltevermögen und Disziplin ein gesundes Gleichgewicht zwischen Arbeit, Familie und Natur herstellen</span>
+                <span>Achieve a healthy balance between work, family and nature through performance, perseverance and discipline.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-me-content" id="about-me" *ngIf="languageservice.chosenLanguage == 'german'">
+    <div class="personal-information">
+        <div class="about-me-profile-picture">
+            <img src="assets/img/profile-picture.png">
+        </div>
+        <div class="about-me-information-text">
+            <h2>About me.</h2>
+            <span>Ich bin ein 28-jähriger begeisterter Fron-End Entwickler, voller Lebensfreude und dem streben nach ständigem Wachstum.</span>
+        </div>
+    </div>
+    <div class="line">
+        <img src="assets/img/icons/line.svg">
+    </div>
+    <div class="detail-informations">
+        <div class="detail-information" data-aos="zoom-in">
+            <div class="detail-information-icon">
+                <img src="assets/img/icons/run.svg">
+            </div>
+            <div class="detail-information-text">
+                <h3>MEINE REISE BEGANN</h3>
+                <span>mit dem Antrieb mich weiter zu entwickeln, nie stehen zu bleiben und zu erschaffen. In die Reise ins Unbekannte.</span>
+            </div>
+        </div>
+        <div class="detail-information" data-aos="zoom-in">
+            <div class="detail-information-icon">
+                <img src="assets/img/icons/hearth.svg">
+            </div>
+            <div class="detail-information-text">
+                <h3>MEINE LEIDENSCHAFT</h3>
+                <span>mit Feuer in der Brust und leidenschaft im Geist stück für stück die Welt zu verändern.</span>
+            </div>
+        </div>
+        <div class="detail-information" data-aos="zoom-in">
+            <div class="detail-information-icon">
+                <img src="assets/img/icons/loupe.svg">
+            </div>
+            <div class="detail-information-text">
+                <h3>MEINE SUCHE</h3>
+                <span>Ich bin stets auf der Suche nach Abenteuer, Spaß, Weiterentwickelung und neuen Erfahrungen.</span>
+            </div>
+        </div>
+        <div class="detail-information" data-aos="zoom-in">
+            <div class="detail-information-icon">
+                <img src="assets/img/icons/airplane.svg">
+            </div>
+            <div class="detail-information-text">
+                <h3>MEIN ZIEL</h3>
+                <span>Durch Leistung, Durchhaltevermögen und Disziplin ein gesundes Gleichgewicht zwischen Arbeit, Familie und Natur herstellen.</span>
             </div>
         </div>
     </div>

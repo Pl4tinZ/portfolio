@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-contact-me',
@@ -6,6 +7,8 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent {
+
+  constructor(public languageservice: LanguageService) {}
 
   @ViewChild('myForm') myForm: ElementRef;
   @ViewChild('nameField') nameField: ElementRef;

@@ -1,16 +1,13 @@
-<app-choose-language *ngIf="languageservice.chosenLanguage == ''" class="choose-language"></app-choose-language>
+<app-choose-language *ngIf="languageservice.chosenLanguage == ''" class="choose-language" data-aos="fade-in"></app-choose-language>
 
-<div class="main-content" *ngIf="router.url === '/'">
+<div class="main-content" *ngIf="router.url === '/' || router.url === '/#about-me' || router.url === '/#portfolio' || router.url === '/#myskills'">
     <app-header class="header"  *ngIf="languageservice.chosenLanguage !== ''"></app-header>
     <app-start-screen class="start" *ngIf="languageservice.chosenLanguage !== ''"></app-start-screen>
     <app-my-skills class="my-skills" *ngIf="languageservice.chosenLanguage !== ''"></app-my-skills>
-    <app-my-work class="my-work"></app-my-work >
+    <app-my-work class="my-work" *ngIf="languageservice.chosenLanguage !== ''"></app-my-work >
     <app-about-me class="about-me" *ngIf="languageservice.chosenLanguage !== ''"></app-about-me>
     <app-contact-me class="contact-me" *ngIf="languageservice.chosenLanguage !== ''"></app-contact-me>
     <app-footer class="footer" *ngIf="languageservice.chosenLanguage !== ''"></app-footer>
 </div>
 
 <router-outlet></router-outlet>
-
-
-<!-- *ngIf="language !== 'english'" -->
