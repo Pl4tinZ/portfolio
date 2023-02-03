@@ -10,11 +10,9 @@ export class LanguageService {
 
   languageEnglish() {
     this.chosenLanguage = 'english';
-    console.log(this.chosenLanguage);
   }
 
   languageGerman() {
     this.chosenLanguage = 'german';
-    console.log(this.chosenLanguage);
   }
 }

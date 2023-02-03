@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-imprint',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./imprint.component.scss']
 })
 export class ImprintComponent {
+
+  constructor(public languageservice: LanguageService) {}
 
 }

@@ -234,9 +234,9 @@ a {
     img {
         background-origin: 0;
         z-index: 1;
+        transition: all 225ms ease-in-out;
 
         &:hover {
-            transition: all 225ms ease-in-out;
             transform: scale(1.1);
         }
     }

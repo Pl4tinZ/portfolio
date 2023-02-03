@@ -1,7 +1,11 @@
 <div class="choose-language-container">
     <div class="language-images">
-        <img (click)="languageservice.languageEnglish()" src="assets/img/american-flag.png">
-        <img (click)="languageservice.languageGerman()" src="assets/img/germany-flag.png">
+        <img (click)="languageservice.languageEnglish()" src="assets/img/american-flag.png" *ngIf="languageservice.chosenLanguage == 'german' || languageservice.chosenLanguage == ''">
+        <img (click)="languageservice.languageGerman()" src="assets/img/germany-flag.png" *ngIf="languageservice.chosenLanguage == 'english' || languageservice.chosenLanguage == ''">
     </div>
-    <h1 class="text">Please choose your favorite language</h1>
+    <div class="title" *ngIf="languageservice.chosenLanguage == 'english' || languageservice.chosenLanguage == ''">
+        <span class="block"></span>
+        <h1>Hey, for the best possible experience, please select a language<span></span></h1>
+    </div>
+    <!-- <h1 class="text" *ngIf="languageservice.chosenLanguage == 'english' || languageservice.chosenLanguage == ''">Hey, for the best possible experience, please select a language</h1> -->
 </div>

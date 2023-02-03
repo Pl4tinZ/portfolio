@@ -1,6 +1,6 @@
 <app-choose-language *ngIf="languageservice.chosenLanguage == ''" class="choose-language" data-aos="fade-in"></app-choose-language>
 
-<div class="main-content" *ngIf="router.url === '/' || router.url === '/#about-me' || router.url === '/#portfolio' || router.url === '/#myskills'">
+<div class="main-content" *ngIf="router.url === '/' || router.url === '/#about-me' || router.url === '/#portfolio' || router.url === '/#myskills' || router.url === '/#contact'">
     <app-header class="header"  *ngIf="languageservice.chosenLanguage !== ''"></app-header>
     <app-start-screen class="start" *ngIf="languageservice.chosenLanguage !== ''"></app-start-screen>
     <app-my-skills class="my-skills" *ngIf="languageservice.chosenLanguage !== ''"></app-my-skills>
