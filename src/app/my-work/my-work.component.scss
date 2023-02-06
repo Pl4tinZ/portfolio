@@ -2,6 +2,10 @@ $primary: #FA2759;
 $secondary: #2DFCD8;
 $grey: #1A1A1A;
 
+.d-none {
+    display: none !important;
+}
+
 .my-work-content {
     display: flex;
     flex-direction: column;
@@ -129,6 +133,26 @@ h2 {
     text-align: center;
     gap: 8px;
 
+    @media (max-width: 700px) {
+        width: 340px;
+        height: 270px;
+    }
+
+    @media (max-width: 550px) {
+        width: 260px;
+        height: 180px;
+    }
+
+    @media (max-width: 460px) {
+        width: 200px;
+        height: 120px;
+    }
+
+    @media (max-width: 300px) {
+        width: 180px;
+        height: 110px;
+    }
+
     &:hover {
         opacity: 1;
     }
@@ -155,4 +179,79 @@ h2 {
         background-color: #FA2759;
         color: white;
     }
+}
+
+.try-out-container-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    background-color: rgba($color: $grey, $alpha: 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: 40px;
+    }
+}
+
+.try-out-mobile {
+    background-image: url('../../assets/img/icons/play.png');
+    width: 40px;
+    display: block;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.github-mobile {
+    background-image: url('../../assets/img/icons/GitHub.svg');
+    width: 40px;
+    display: block;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.project-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    gap: 8px;
+    overflow-x: hidden;
+}
+
+.slide-in {
+    animation: slide-in-project-information 0.5s;
+}
+
+.slide-out {
+    animation: slide-out-project-information 0.5s;
+}
+
+@keyframes slide-in-project-information {
+    0%   {width: 0%;}
+    100% {width: 100%;}
+}
+
+@keyframes slide-out-project-information {
+    0%   {width: 100%;}
+    100% {width: 0%; display: none;}
 }

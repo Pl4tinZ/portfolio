@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { LanguageService } from '../services/language.service';
 
 @Component({
@@ -8,7 +8,22 @@ import { LanguageService } from '../services/language.service';
 })
 export class MyWorkComponent {
 
-  constructor(public languageservice: LanguageService) {}
+  constructor(public languageservice: LanguageService) { }
+
+  public innerWidth: any;
+
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+    this.mobileWorkSection();
+  }
+
+  mobileWorkSection() {
+    if (this.innerWidth <= '820') {
+      return true
+    } else {
+      return false
+    }
+  }
 
   projects: any = [
     {
@@ -79,7 +94,7 @@ export class MyWorkComponent {
       "url": "https://ring-of-fire.frese.one",
       "urlGithub": "https://github.com/Pl4tinZ/RingOfFire"
     }
-];
+  ];
 
 
   allButton = true;
@@ -89,7 +104,7 @@ export class MyWorkComponent {
   filterAll() {
     this.tool = []
     this.tool = this.projects;
-    
+
     this.jsButton = false;
     this.allButton = true;
     this.angularButton = false;
@@ -98,7 +113,7 @@ export class MyWorkComponent {
   filterAngular() {
     this.tool = []
     this.tool = this.projects.filter((item: any) => item.workTool == "angular");
-    
+
     this.jsButton = false;
     this.allButton = false;
     this.angularButton = true;
@@ -113,5 +128,17 @@ export class MyWorkComponent {
     this.allButton = false;
     this.angularButton = false;
   }
+
+  openProjectInfomation(i) {
+    let container = document.getElementById(`project${i}`);
+    container.classList.remove('slide-out');
+    container.classList.remove('d-none');
+    container.classList.add('slide-in');
+    setTimeout(() => {
+      container.classList.remove('slide-in');
+      container.classList.add('slide-out');
+    }, 3000)
+  }
+
 
 }
