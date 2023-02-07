@@ -59,6 +59,15 @@
                 <a href="{{ project.url }}" target="_blank" class="try-out-button">Teste es</a>
                 <a href="{{ project.urlGithub }}" target="_blank" class="try-out-button">Github</a>
             </div>
+            <div class="project-information d-none" id="project{{i}}">
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.text }}</p>
+            </div>
+            <div class="try-out-container-mobile" [class.d-none]="mobileWorkSection() == false">
+                <div class="work-information" (click)="openProjectInfomation(i)"><img src="../../assets/img/icons/information.png"></div>
+                <div class="work-github"><a href="{{ project.urlGithub }}" target="_blank" class="github-mobile"></a></div>
+                <div class="work-play"><a href="{{ project.url }}" target="_blank" class="try-out-mobile"></a></div>
+            </div>
         </div>
     </div>
 </div>

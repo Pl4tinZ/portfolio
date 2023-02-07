@@ -194,28 +194,3 @@ header {
       transform: rotate(45deg);
     }
   }
-  
-  
-  // signature
-  .signature-wrapper {
-    margin-top: 150px;
-    margin-bottom: 100px;
-    text-align: center;
-    
-    .signature-title {
-      font-size: 16px;
-      letter-spacing: 1px;
-      font-weight: normal;
-      color: #444;
-    }
-    
-    .signature-link {
-      color: #444;
-      display: inline-block;
-      margin: 20px 0 10px;
-      font-size: 13px;
-      letter-spacing: 0.5px;
-      text-decoration: none;
-      border-bottom: solid 2px #444; 
-    }
-  }

@@ -3,7 +3,7 @@
         <img src="assets/img/header-logo.png">
     </div>
     <div class="links">
-        <div (click)="scrollToTop()"><a routerLink="/"  class="home">HOME</a></div>
+        <div (click)="scrollToTop()"><a routerLink="/" class="home">HOME</a></div>
         <a href="#about-me" class="about">ABOUT</a>
         <a href="#portfolio" class="portfolio">PORFOLIO</a>
     </div>
@@ -20,9 +20,9 @@
             </label>
         </div>
         <div class="item-list">
-        <a (click)="uncheck()" href="#" class="home">HOME</a>
-        <a (click)="uncheck()" href="#about-me" class="about">ABOUT</a>
-        <a (click)="uncheck()" href="#portfolio" class="portfolio">PORFOLIO</a>
+            <a (click)="scrollToTop(); uncheck()" routerLink="/" class="home">HOME</a>
+            <a (click)="uncheck()" href="#about-me" class="about">ABOUT</a>
+            <a (click)="uncheck()" href="#portfolio" class="portfolio">PORFOLIO</a>
         </div>
     </label>
 </header>
@@ -32,7 +32,7 @@
         <img src="assets/img/header-logo.png">
     </div>
     <div class="links">
-        <div (click)="scrollToTop()"><a routerLink="/"  class="home">Startseite</a></div>
+        <div (click)="scrollToTop()"><a routerLink="/" class="home">Startseite</a></div>
         <a href="#about-me" class="about">Über mich</a>
         <a href="#portfolio" class="portfolio">Portfolio</a>
     </div>
@@ -49,9 +49,9 @@
             </label>
         </div>
         <div class="item-list">
-        <div (click)="scrollToTop()"><a routerLink="/"  class="home">HOME</a></div>
-        <a (click)="uncheck()" href="#about-me" class="about">Über mich</a>
-        <a (click)="uncheck()" href="#portfolio" class="portfolio">Portfolio</a>
+            <a (click)="scrollToTop(); uncheck()" routerLink="/" class="home">Startseite</a>
+            <a (click)="uncheck()" href="#about-me" class="about">Über mich</a>
+            <a (click)="uncheck()" href="#portfolio" class="portfolio">Portfolio</a>
         </div>
     </label>
 </header>
