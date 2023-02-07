@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="work-container">
-        <div data-aos="fade-up-left" *ngFor="let project of tool; let i = index" class="project">
+        <div data-aos="fade-up" data-aos-duration="3000" *ngFor="let project of tool; let i = index" class="project">
             <img src="{{ project.image }}">
             <div class="try-out-container" [class.d-none]="mobileWorkSection()">
                 <h2>{{ project.name }}</h2>
@@ -27,7 +27,7 @@
                 <p>{{ project.text }}</p>
             </div>
             <div class="try-out-container-mobile" [class.d-none]="mobileWorkSection() == false">
-                <div class="work-information" (click)="openProjectInfomation(i)"><img src="../../assets/img/icons/information.png"></div>
+                <div class="work-information" (click)="openProjectInfomation(i)"><img src="assets/img/icons/information.png"></div>
                 <div class="work-github"><a href="{{ project.urlGithub }}" target="_blank" class="github-mobile"></a></div>
                 <div class="work-play"><a href="{{ project.url }}" target="_blank" class="try-out-mobile"></a></div>
             </div>
@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="work-container">
-        <div data-aos="fade-up-left" *ngFor="let project of tool; let i = index" class="project">
+        <div data-aos="fade-up" data-aos-duration="3000" *ngFor="let project of tool; let i = index" class="project">
             <img src="{{ project.image }}">
             <div class="try-out-container">
                 <h2>{{ project.name }}</h2>
@@ -64,7 +64,7 @@
                 <p>{{ project.text }}</p>
             </div>
             <div class="try-out-container-mobile" [class.d-none]="mobileWorkSection() == false">
-                <div class="work-information" (click)="openProjectInfomation(i)"><img src="../../assets/img/icons/information.png"></div>
+                <div class="work-information" (click)="openProjectInfomation(i)"><img src="assets/img/icons/information.png"></div>
                 <div class="work-github"><a href="{{ project.urlGithub }}" target="_blank" class="github-mobile"></a></div>
                 <div class="work-play"><a href="{{ project.url }}" target="_blank" class="try-out-mobile"></a></div>
             </div>
