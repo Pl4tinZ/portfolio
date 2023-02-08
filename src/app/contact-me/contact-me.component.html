@@ -8,7 +8,8 @@
         <h4>Email address<span>*</span></h4>
         <input required type="email" placeholder="Enter your Email address" name="email" #emailField>
         <h4>Message<span>*</span></h4>
-        <textarea required name="message" id="contact-textarea" cols="30" rows="4" placeholder="Enter your message" #messageField></textarea>
+        <textarea required name="message" id="contact-textarea" cols="30" rows="4" placeholder="Enter your message"
+            #messageField></textarea>
         <div class="contact-me-btn-container">
             <div class="sec-btn">
                 <button #contactButton>Send</button>
@@ -27,12 +28,28 @@
         <h4>Email addresse<span>*</span></h4>
         <input required type="email" placeholder="Trage hier deine Email addresse ein" name="email" #emailField>
         <h4>Nachricht<span>*</span></h4>
-        <textarea required name="message" id="contact-textarea" cols="30" rows="4" placeholder="Trage hier deine Nachricht ein" #messageField></textarea>
+        <textarea required name="message" id="contact-textarea" cols="30" rows="4"
+            placeholder="Trage hier deine Nachricht ein" #messageField></textarea>
         <div class="contact-me-btn-container">
             <div class="sec-btn">
                 <button #contactButton>Senden</button>
             </div>
         </div>
+
+        <div class="animations">
+            <div class="spinner-box d-none" id="loading">
+                <div class="circle-border">
+                    <div class="circle-core"></div>
+                </div>
+            </div>
+            <div class="success-checkmark d-none" id="success">
+                <div class="check-icon">
+                    <span class="icon-line line-tip"></span>
+                    <span class="icon-line line-long"></span>
+                    <div class="icon-circle"></div>
+                </div>
+            </div>
+        </div>
+
     </form>
 </div>
-

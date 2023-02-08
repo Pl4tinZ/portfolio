@@ -17,7 +17,8 @@ export class ContactMeComponent {
   @ViewChild('contactButton') contactButton: ElementRef;
 
   async sendMail() {
-    console.log(this.myForm);
+    document.getElementById('loading').classList.remove('d-none');
+
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let emailField = this.emailField.nativeElement;
@@ -27,19 +28,25 @@ export class ContactMeComponent {
     messageField.disabled = true;
     emailField.disabled = true;
     contactButton.disabled = true;
-    // Animation anzeigen das gerade gesendet wird
+
     let formDFata = new FormData();
     formDFata.append('name', nameField.value);
     formDFata.append('email', emailField.value);
     formDFata.append('message', messageField.value);
 
-    await fetch('HIER KOMMT DIE URL VON DER PHP DATEI REON DIE AUF DEM SERVER LIEGT', {method: 'POST', body: formDFata});
-
-    // Animation Nachricht gesendet
+    await fetch('https://portfolio.frese.one/send_mail.php', {method: 'POST', body: formDFata});
 
     nameField.disabled = false;
     messageField.disabled = false;
     emailField.disabled = false;
     contactButton.disabled = false;
+
+    document.getElementById('loading').classList.add('d-none');
+    document.getElementById('success').classList.remove('d-none');
+
+    setTimeout(() => {
+      document.getElementById('success').classList.add('d-none');
+    },1000)
+
   }
 }

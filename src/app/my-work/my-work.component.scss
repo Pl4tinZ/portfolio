@@ -277,6 +277,26 @@ h2 {
     h2 {
         margin: 8px;
         color: $grey;
+
+        @media (max-width: 550px) {
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        @media (max-width: 460px) {
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+
+    p {
+        @media (max-width: 550px) {
+            font-size: 10px;
+        }
+
+        @media (max-width: 460px) {
+            font-size: 8px;
+        }
     }
 }
 
