@@ -40,6 +40,9 @@ export class ContactMeComponent {
     messageField.disabled = false;
     emailField.disabled = false;
     contactButton.disabled = false;
+    nameField.value = '';
+    messageField.value = '';
+    emailField.value = '';
 
     document.getElementById('loading').classList.add('d-none');
     document.getElementById('success').classList.remove('d-none');
