@@ -46,10 +46,13 @@ $grey: #1A1A1A;
 
         img {
             width: 200px;
+            height: 200px;
             border-radius: 100%;
+            object-fit: cover;
 
             @media (max-width: 900px) {
                 width: 150px;
+                height: 150px;
             }
         }
 
