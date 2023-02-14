@@ -13,6 +13,9 @@ export class ChooseLanguageComponent {
     
   }
 
+  ngOnInit(): void {
+    this.languageservice.checkSession();
+  }
 
 }
 

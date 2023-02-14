@@ -32,7 +32,7 @@ export class MyWorkComponent {
       "name": "El Pollo Loco",
       "text": "JavaScript jump and run game",
       "url": "https://el-pollo-loco.frese.one",
-      "urlGithub": "######"
+      "urlGithub": "https://github.com/Pl4tinZ/El-Pollo-Loco"
     },
     {
       "workTool": "js",
@@ -68,7 +68,7 @@ export class MyWorkComponent {
       "name": "El Pollo Loco",
       "text": "JavaScript jump and run game",
       "url": "https://el-pollo-loco.frese.one",
-      "urlGithub": "######"
+      "urlGithub": "https://github.com/Pl4tinZ/El-Pollo-Loco"
     },
     {
       "workTool": "js",
