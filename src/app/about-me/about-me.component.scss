@@ -32,6 +32,10 @@ $grey: #1A1A1A;
     align-items: center;
     width: 80%;
 
+    @media (max-width: 700px) {
+        width: 100%;
+    }
+
     .about-me-profile-picture {
 
         width: 400px;
@@ -40,7 +44,7 @@ $grey: #1A1A1A;
         justify-content: center;
         align-items: center;
 
-        @media (max-width: 700px) {
+        @media (max-width: 400px) {
             width: 100%;
         }
 

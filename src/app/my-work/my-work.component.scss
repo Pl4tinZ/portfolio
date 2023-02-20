@@ -35,6 +35,39 @@ h2 {
     color: white;
     margin: 48px 0;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+
+    &:before {
+        background: black;
+        z-index: -2;
+        transform: translate3D(0, 0, 0);
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        background: $primary;
+        z-index: -1;
+        transform: translate3D(0, -100%, 0);
+        transition: all .5s;
+    }
+
+    &:hover {
+        color: white;
+
+        &:after {
+            transform: translate3D(0, 0, 0);
+            transition: all .5s;
+        }
+    }
 
     @media (max-width: 700px) {
         width: 100px;
@@ -60,11 +93,18 @@ h2 {
             font-size: 10px;
         }
     }
+}
 
+.slideleft {
+    &:after {
+        top: 0;
+        z-index: -1;
+        transform: translate3D(-101%, 0, 0);
+    }
 
-    &:hover {
-        transition: all 225ms ease-in-out;
-        background-color: $primary;
+    &:hover:after {
+        transform: translate3D(0, 0, 0);
+        transition: all .5s;
     }
 }
 
@@ -132,6 +172,7 @@ h2 {
     font-size: 16px;
     text-align: center;
     gap: 8px;
+    transition: all 225ms;
 
     @media (max-width: 700px) {
         width: 340px;
@@ -163,6 +204,7 @@ h2 {
 
     h2 {
         margin: 16px;
+        color: $grey;
     }
 }
 
@@ -177,6 +219,7 @@ h2 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: all 225ms;
 
     &:hover {
         cursor: pointer;
