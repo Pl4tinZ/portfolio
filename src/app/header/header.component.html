@@ -1,11 +1,11 @@
 <header *ngIf="languageservice.chosenLanguage == 'english'">
     <div class="header-logo">
-        <img src="assets/img/header-logo.png">
+        <img src="assets/img/header-logo-white.svg">
     </div>
     <div class="links">
         <div (click)="scrollToTop()"><a routerLink="/" class="home">HOME</a></div>
-        <a href="#about-me" class="about">ABOUT</a>
         <a href="#portfolio" class="portfolio">PORFOLIO</a>
+        <a href="#about-me" class="about">ABOUT</a>
     </div>
 
 
@@ -21,20 +21,20 @@
         </div>
         <div class="item-list">
             <a (click)="scrollToTop(); uncheck()" routerLink="/" class="home">HOME</a>
-            <a (click)="uncheck()" href="#about-me" class="about">ABOUT</a>
             <a (click)="uncheck()" href="#portfolio" class="portfolio">PORFOLIO</a>
+            <a (click)="uncheck()" href="#about-me" class="about">ABOUT</a>
         </div>
     </label>
 </header>
 
 <header *ngIf="languageservice.chosenLanguage == 'german'">
     <div class="header-logo">
-        <img src="assets/img/header-logo.png">
+        <img src="assets/img/header-logo-white.svg">
     </div>
     <div class="links">
         <div (click)="scrollToTop()"><a routerLink="/" class="home">Startseite</a></div>
-        <a href="#about-me" class="about">Über mich</a>
         <a href="#portfolio" class="portfolio">Portfolio</a>
+        <a href="#about-me" class="about">Über mich</a>
     </div>
 
 
@@ -50,8 +50,8 @@
         </div>
         <div class="item-list">
             <a (click)="scrollToTop(); uncheck()" routerLink="/" class="home">Startseite</a>
-            <a (click)="uncheck()" href="#about-me" class="about">Über mich</a>
             <a (click)="uncheck()" href="#portfolio" class="portfolio">Portfolio</a>
+            <a (click)="uncheck()" href="#about-me" class="about">Über mich</a>
         </div>
     </label>
 </header>

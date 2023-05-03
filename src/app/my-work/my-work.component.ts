@@ -11,10 +11,20 @@ export class MyWorkComponent {
   constructor(public languageservice: LanguageService) { }
 
   public innerWidth: any;
+  projects;
+  tool;
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
     this.mobileWorkSection();
+
+    if (this.languageservice.chosenLanguage == 'german') {
+      this.projects = this.germanProjects;
+    } else {
+      this.projects = this.englishProjects;
+    }
+
+    this.tool = this.projects;
   }
 
   mobileWorkSection() {
@@ -25,7 +35,42 @@ export class MyWorkComponent {
     }
   }
 
-  projects: any = [
+  germanProjects: any = [
+    {
+      "workTool": "js",
+      "image": "assets/img/project1.png",
+      "name": "El Pollo Loco",
+      "text": "JavaScript jump and run Spiel",
+      "url": "https://el-pollo-loco.frese.one",
+      "urlGithub": "https://github.com/Pl4tinZ/El-Pollo-Loco"
+    },
+    {
+      "workTool": "js",
+      "image": "assets/img/project2.png",
+      "name": "Join",
+      "text": "JavaScript - Kanbanboard",
+      "url": "https://join.frese.one",
+      "urlGithub": "https://github.com/Pl4tinZ/Join-me"
+    },
+    {
+      "workTool": "angular",
+      "image": "assets/img/project3.png",
+      "name": "Portfolio",
+      "text": "Angular basierte Homepage",
+      "url": "https://portfolio.frese.one",
+      "urlGithub": "https://github.com/Pl4tinZ/portfolio"
+    },
+    {
+      "workTool": "angular",
+      "image": "assets/img/project4.png",
+      "name": "Ring of fire",
+      "text": "Angular basiertes Kartenspiel",
+      "url": "https://ring-of-fire.frese.one",
+      "urlGithub": "https://github.com/Pl4tinZ/RingOfFire"
+    }
+  ];
+
+  englishProjects: any = [
     {
       "workTool": "js",
       "image": "assets/img/project1.png",
@@ -59,43 +104,6 @@ export class MyWorkComponent {
       "urlGithub": "https://github.com/Pl4tinZ/RingOfFire"
     }
   ];
-
-
-  tool: any = [
-    {
-      "workTool": "js",
-      "image": "assets/img/project1.png",
-      "name": "El Pollo Loco",
-      "text": "JavaScript jump and run game",
-      "url": "https://el-pollo-loco.frese.one",
-      "urlGithub": "https://github.com/Pl4tinZ/El-Pollo-Loco"
-    },
-    {
-      "workTool": "js",
-      "image": "assets/img/project2.png",
-      "name": "Join",
-      "text": "JavaScript - Kanbanboard",
-      "url": "https://join.frese.one",
-      "urlGithub": "https://github.com/Pl4tinZ/Join-me"
-    },
-    {
-      "workTool": "angular",
-      "image": "assets/img/project3.png",
-      "name": "Portfolio",
-      "text": "Angular based homepage",
-      "url": "https://portfolio.frese.one",
-      "urlGithub": "https://github.com/Pl4tinZ/portfolio"
-    },
-    {
-      "workTool": "angular",
-      "image": "assets/img/project4.png",
-      "name": "Ring of fire",
-      "text": "Angular based card game",
-      "url": "https://ring-of-fire.frese.one",
-      "urlGithub": "https://github.com/Pl4tinZ/RingOfFire"
-    }
-  ];
-
 
   allButton = true;
   jsButton = false;
