@@ -167,7 +167,7 @@ h2 {
     opacity: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(rgba(0,0,0,.94),#2DFCD8);
     color: black;
     font-size: 16px;
     text-align: center;
@@ -203,8 +203,12 @@ h2 {
     }
 
     h2 {
-        margin: 16px;
-        color: $grey;
+        margin: 4px;
+        color: $primary;
+    }
+
+    p {
+        margin: 12px;
     }
 }
 
@@ -312,6 +316,14 @@ h2 {
     gap: 8px;
     overflow-x: hidden;
     white-space: pre;
+
+    p {  
+        @media (max-width: 820px) {
+            display: flex;
+            width: 70%;
+            white-space: break-spaces;
+        }
+    }
 }
 
 .slide-in-out {
